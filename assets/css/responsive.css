@@ -212,10 +212,28 @@
         transform: rotate(-45deg) translate(7px, -6px);
     }
 
-    /* Teléfono en header */
+    /* Teléfono en header - Icono visible */
     .header-phone {
-        padding: 0.5rem;
-        border-radius: var(--radius-lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        border-radius: 50%;
+        background: var(--color-primary);
+        color: white;
+    }
+
+    .header-phone:hover {
+        background: var(--color-primary-light);
+        transform: scale(1.05);
+    }
+
+    .header-phone svg {
+        width: 20px;
+        height: 20px;
+        stroke: white;
     }
 
     .header-phone span {
