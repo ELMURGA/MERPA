@@ -1,0 +1,258 @@
+{
+    "categories": [
+        {
+            "id": "pinturas-plasticas",
+            "name": "Pinturas Plásticas",
+            "description": "Pinturas versátiles para interior y exterior",
+            "icon": "paint-bucket"
+        },
+        {
+            "id": "esmaltes",
+            "name": "Esmaltes",
+            "description": "Esmaltes sintéticos y al agua",
+            "icon": "brush"
+        },
+        {
+            "id": "barnices",
+            "name": "Barnices y Lasures",
+            "description": "Protección y acabado para madera",
+            "icon": "wood"
+        },
+        {
+            "id": "imprimaciones",
+            "name": "Imprimaciones",
+            "description": "Preparación profesional de superficies",
+            "icon": "layers"
+        },
+        {
+            "id": "herramientas",
+            "name": "Herramientas de Bricolaje",
+            "description": "Todo para tus proyectos",
+            "icon": "tools"
+        },
+        {
+            "id": "impermeabilizacion",
+            "name": "Impermeabilización",
+            "description": "Protección contra la humedad",
+            "icon": "shield"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "Pintura Plástica Valentine Valon Pro 600 Blanca",
+            "category": "pinturas-plasticas",
+            "price": 69.90,
+            "oldPrice": 77.67,
+            "description": "La Pintura Plástica Valentine Valon Pro 600 Blanca es la solución ideal para tus proyectos de pintura, ofreciendo un acabado liso y mate de alta calidad. Es la elección perfecta para profesionales y aficionados que buscan resultados duraderos y un rendimiento superior.",
+            "image": "valentine-valon-pro.jpg",
+            "badge": "Oferta",
+            "stock": true,
+            "featured": true
+        },
+        {
+            "id": 2,
+            "name": "Pintura Plástica Colom Super Cubriente Blanco",
+            "category": "pinturas-plasticas",
+            "price": 13.50,
+            "oldPrice": 15.00,
+            "description": "La Pintura Plástica Colom Super Cubriente Blanco es la solución definitiva para tus proyectos de pintura que exigen máxima blancura y un poder cubriente excepcional. Diseñada para cubrir incluso los fondos más oscuros con una o dos capas.",
+            "image": "colom-super-cubriente.jpg",
+            "badge": "Popular",
+            "stock": true,
+            "featured": true
+        },
+        {
+            "id": 3,
+            "name": "Pintura Plástica Gilmapin Yeprodur 20kg",
+            "category": "pinturas-plasticas",
+            "price": 44.91,
+            "oldPrice": 49.90,
+            "description": "La Pintura Plástica Gilmapin Yeprodur 20kg es una pintura especial formulada específicamente para el pintado de superficies de yeso. Ideal para placas de yeso laminado (PYL), yesos proyectados y placas de cartón yeso.",
+            "image": "gilmapin-yeprodur.jpg",
+            "badge": "Oferta",
+            "stock": true,
+            "featured": true
+        },
+        {
+            "id": 4,
+            "name": "Esmalte Sintético Colom Martelé",
+            "category": "esmaltes",
+            "price": 9.90,
+            "oldPrice": null,
+            "description": "Esmalte sintético con acabado martelé decorativo. Ideal para superficies metálicas y de madera, proporciona un acabado único con textura especial.",
+            "image": "esmalte-martele.jpg",
+            "badge": null,
+            "stock": true,
+            "featured": false
+        },
+        {
+            "id": 5,
+            "name": "Esmalte Sintético Forja Negro Liso Hispamart",
+            "category": "esmaltes",
+            "price": 10.90,
+            "oldPrice": null,
+            "description": "El Esmalte Sintético Forja Negro Liso de Hispamart es una pintura de alta calidad que proporciona un acabado único y elegante. Ofrece la estética del hierro forjado, pero con una superficie lisa.",
+            "image": "esmalte-forja.jpg",
+            "badge": null,
+            "stock": true,
+            "featured": true
+        },
+        {
+            "id": 6,
+            "name": "Esmalte Efecto Madera Sapelly Macy",
+            "category": "esmaltes",
+            "price": 9.90,
+            "oldPrice": null,
+            "description": "El Esmalte Efecto Madera Sapelly de Macy es una pintura de alta calidad diseñada para transformar cualquier superficie en un acabado que simula la calidez y la textura de la madera.",
+            "image": "esmalte-madera-sapelly.jpg",
+            "badge": null,
+            "stock": true,
+            "featured": false
+        },
+        {
+            "id": 7,
+            "name": "Barniz Sintético Colom Mate",
+            "category": "barnices",
+            "price": 8.50,
+            "oldPrice": null,
+            "description": "Barniz Sintético Colom Mate de uso general para madera en interiores. Proporciona un acabado mate uniforme, resistente y de secado rápido, ideal para muebles y carpintería.",
+            "image": "barniz-mate.jpg",
+            "badge": null,
+            "stock": true,
+            "featured": false
+        },
+        {
+            "id": 8,
+            "name": "Barniz Marino Colom Brillo",
+            "category": "barnices",
+            "price": 12.90,
+            "oldPrice": null,
+            "description": "Barniz Marino Colom Brillo es un barniz de alto brillo para madera, ideal como capa de acabado en interiores y ambientes marinos. Fácil aplicación y formulado con resinas alcídicas modificadas.",
+            "image": "barniz-marino.jpg",
+            "badge": "Profesional",
+            "stock": true,
+            "featured": true
+        },
+        {
+            "id": 9,
+            "name": "Imprimación Vinílica Colom Todoterreno",
+            "category": "imprimaciones",
+            "price": 14.50,
+            "oldPrice": null,
+            "description": "Imprimación Vinílica Colom Todoterreno es una imprimación anticorrosiva de alta adherencia y flexibilidad, indicada para todo tipo de superficies, incluyendo acero galvanizado, PVC y madera.",
+            "image": "imprimacion-vinilica.jpg",
+            "badge": null,
+            "stock": true,
+            "featured": true
+        },
+        {
+            "id": 10,
+            "name": "Polímero para Óxidos Convertox",
+            "category": "imprimaciones",
+            "price": 7.90,
+            "oldPrice": null,
+            "description": "Polímero para Óxidos Convertox neutraliza el óxido en metales férricos, formando una capa protectora estable lista para pintar. Ideal para proteger hierro y estructuras metálicas de la corrosión.",
+            "image": "convertox.jpg",
+            "badge": null,
+            "stock": true,
+            "featured": false
+        },
+        {
+            "id": 11,
+            "name": "Batidor de Pintura Manual ABS",
+            "category": "herramientas",
+            "price": 1.00,
+            "oldPrice": null,
+            "description": "Batidor de pintura manual fabricado en ABS de alta resistencia. Ideal para mezclar pinturas y conseguir una mezcla homogénea.",
+            "image": "batidor-pintura.jpg",
+            "badge": "Económico",
+            "stock": true,
+            "featured": false
+        },
+        {
+            "id": 12,
+            "name": "Zanco Basculante de Aluminio",
+            "category": "herramientas",
+            "price": 10.90,
+            "oldPrice": 12.11,
+            "description": "Zanco basculante de aluminio ligero y resistente. Ideal para trabajos de pintura en altura con máxima seguridad y comodidad.",
+            "image": "zanco-aluminio.jpg",
+            "badge": "Oferta",
+            "stock": true,
+            "featured": true
+        },
+        {
+            "id": 13,
+            "name": "Brocha para Blanquear para Superficies Rugosas",
+            "category": "herramientas",
+            "price": 3.50,
+            "oldPrice": null,
+            "description": "Brocha para Blanquear fabricada con una mezcla de pelo de caballo y fibras sintéticas, ofreciendo una aplicación uniforme y resistente. Ideal para pinturas plásticas y cal.",
+            "image": "brocha-blanquear.jpg",
+            "badge": null,
+            "stock": true,
+            "featured": false
+        },
+        {
+            "id": 14,
+            "name": "Pintura Efecto Tiza 750 ML",
+            "category": "pinturas-plasticas",
+            "price": 12.90,
+            "oldPrice": null,
+            "description": "Pintura efecto tiza para decoración de muebles y objetos. Acabado mate chalky ideal para proyectos de restauración y manualidades.",
+            "image": "pintura-tiza.jpg",
+            "badge": "Decoración",
+            "stock": true,
+            "featured": false
+        },
+        {
+            "id": 15,
+            "name": "Quitapinturas en Gel HP",
+            "category": "imprimaciones",
+            "price": 11.50,
+            "oldPrice": null,
+            "description": "Para eliminar restos de pinturas y barnices de todo tipo de superficies. Gel de alta efectividad y fácil aplicación.",
+            "image": "quitapinturas.jpg",
+            "badge": null,
+            "stock": true,
+            "featured": false
+        }
+    ],
+    "stores": [
+        {
+            "id": 1,
+            "name": "Pinturas Merpa - Torno",
+            "phone": "955 865 715",
+            "email": "info@pinturasmerpa.es",
+            "address": "Calle Torno, Utrera (Sevilla)",
+            "hours": {
+                "weekdays": "07:30 - 14:00 / 17:00 - 20:00",
+                "saturday": "09:00 - 13:00",
+                "sunday": "Cerrado"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Pinturas Merpa - Ronda las Zarzuelas",
+            "phone": "955 864 705",
+            "email": "info@pinturasmerpa.es",
+            "address": "C/Ronda las Zarzuelas, Utrera (Sevilla)",
+            "hours": {
+                "weekdays": "08:30 - 14:00 / 17:00 - 20:00",
+                "saturday": "09:00 - 13:00",
+                "sunday": "Cerrado"
+            }
+        }
+    ],
+    "company": {
+        "name": "Pinturas Merpa E Hijos S.L.",
+        "slogan": "Tu Tienda de Pintura y Bricolaje",
+        "description": "Empresa familiar con más de 30 años de experiencia en el sector. Servimos toda clase de productos relacionados con la pintura, pintura de decoración, carrocería y todo lo relacionado con pinturas industriales.",
+        "location": "Utrera (Sevilla)",
+        "email": "info@pinturasmerpa.es",
+        "phone": "640 385 384",
+        "founded": 1994,
+        "experience": "30+ años"
+    }
+}

@@ -1,0 +1,512 @@
+================================================================================
+                    DOCUMENTACIÓN WEB COMPLETA - PINTURAS MERPA
+                         Última actualización: 17/12/2025
+================================================================================
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                           ÍNDICE DE CONTENIDOS                                ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  1. Información General del Proyecto                                          ║
+║  2. Estructura de Archivos                                                    ║
+║  3. Tecnologías Utilizadas                                                    ║
+║  4. Páginas del Sitio Web                                                     ║
+║  5. Estilos CSS                                                               ║
+║  6. JavaScript - Funcionalidades                                              ║
+║  7. Sistema de Diseño                                                         ║
+║  8. Responsive Design                                                         ║
+║  9. SEO y Metadatos                                                           ║
+║ 10. Información de Contacto                                                   ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+================================================================================
+1. INFORMACIÓN GENERAL DEL PROYECTO
+================================================================================
+
+Nombre:         Pinturas Merpa - Sitio Web Corporativo
+Empresa:        Pinturas Merpa E Hijos S.L.
+Ubicación:      Utrera, Sevilla (España)
+Sector:         Pinturas y Bricolaje
+Experiencia:    Más de 30 años en el sector
+
+Descripción:
+Sitio web corporativo moderno y responsive que presenta el catálogo de 
+productos, información de la empresa, ubicación de tiendas y formulario 
+de contacto. Diseñado con estética moderna utilizando glassmorphism, 
+gradientes y animaciones suaves.
+
+
+================================================================================
+2. ESTRUCTURA DE ARCHIVOS
+================================================================================
+
+MERPA/
+│
+├── index.html                      # Página principal (Home)
+├── README.md                       # Documentación del proyecto
+├── DOCUMENTACION_WEB_COMPLETA.txt  # Este archivo
+│
+├── assets/
+│   ├── css/
+│   │   ├── main.css               # Estilos principales (36KB)
+│   │   ├── responsive.css         # Media queries responsive (10KB)
+│   │   └── animations.css         # Animaciones CSS (11KB)
+│   │
+│   ├── images/
+│   │   ├── hero/                  # Imágenes sección hero
+│   │   ├── icons/                 # Iconos del sitio
+│   │   ├── logo/                  # Logotipos
+│   │   │   ├── logo-merpa.png     # Logo principal
+│   │   │   └── favicon.png        # Favicon
+│   │   └── products/              # Imágenes de productos
+│   │
+│   └── js/
+│       └── main.js                # JavaScript principal (15KB)
+│
+├── pages/
+│   │
+│   │   === PÁGINAS DE PRODUCTOS ===
+│   ├── productos.html             # Catálogo general
+│   ├── pinturas-plasticas.html    # Pinturas plásticas
+│   ├── esmaltes.html              # Esmaltes
+│   ├── barnices.html              # Barnices y lasures
+│   ├── imprimaciones.html         # Imprimaciones
+│   ├── herramientas.html          # Herramientas de pintura
+│   ├── disolventes.html           # Disolventes
+│   ├── masillas.html              # Masillas
+│   ├── pegamentos.html            # Pegamentos
+│   ├── siliconas.html             # Siliconas
+│   ├── impermeabilizacion.html    # Impermeabilización
+│   ├── piscinas.html              # Pinturas para piscinas
+│   ├── spray.html                 # Pinturas en spray
+│   ├── tintes.html                # Tintes para madera
+│   ├── pintura-tiza.html          # Pintura tiza decorativa
+│   │
+│   │   === PÁGINAS ESPECIALES ===
+│   ├── mas-vendidos.html          # Productos más vendidos
+│   ├── novedades.html             # Productos nuevos
+│   ├── ofertas.html               # Productos en oferta
+│   │
+│   │   === PÁGINAS CORPORATIVAS ===
+│   ├── nosotros.html              # Sobre la empresa
+│   ├── tiendas.html               # Ubicaciones de tiendas
+│   ├── contacto.html              # Formulario de contacto
+│   │
+│   │   === PÁGINAS LEGALES ===
+│   ├── aviso-legal.html           # Aviso legal
+│   ├── politica-privacidad.html   # Política de privacidad
+│   └── politica-cookies.html      # Política de cookies
+│
+└── data/
+    └── products.json              # Datos de productos (JSON)
+
+
+================================================================================
+3. TECNOLOGÍAS UTILIZADAS
+================================================================================
+
+FRONTEND:
+─────────
+• HTML5           - Estructura semántica
+• CSS3            - Estilos, animaciones, variables CSS
+• JavaScript ES6+ - Interactividad, DOM manipulation
+• SVG             - Iconos inline (no dependencias externas)
+
+TIPOGRAFÍA:
+───────────
+• Google Fonts - Inter (pesos: 400, 500, 600, 700, 800)
+  URL: https://fonts.googleapis.com/css2?family=Inter
+
+NO SE UTILIZAN:
+───────────────
+• No frameworks CSS (Tailwind, Bootstrap)
+• No frameworks JS (React, Vue, Angular)
+• No librerías de iconos externas
+• No dependencias npm
+
+
+================================================================================
+4. PÁGINAS DEL SITIO WEB
+================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ PÁGINA PRINCIPAL (index.html)                                                │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Secciones:                                                                   │
+│ • Top Bar - Email y teléfono                                                 │
+│ • Header - Logo, navegación, botón teléfono                                  │
+│ • Hero - Slogan principal con imagen de pintor                               │
+│ • Wave Separator - Separador decorativo animado                              │
+│ • Servicios - Grid de servicios ofrecidos                                    │
+│ • Categorías - Grid de categorías de productos                               │
+│ • Productos Destacados - Selección de productos                              │
+│ • Sobre Nosotros - Historia y estadísticas                                   │
+│ • Nuestras Tiendas - Cards con mapas                                         │
+│ • Newsletter - Suscripción por email                                         │
+│ • Footer - Links, contacto, redes sociales                                   │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+PÁGINAS DE PRODUCTOS:
+─────────────────────
+Cada página de categoría contiene:
+• Hero interno con título y descripción
+• Grid de productos con imagen, nombre, descripción y precio
+• Botón "Consultar" que enlaza a contacto
+• Footer consistente
+
+TIENDAS (tiendas.html):
+───────────────────────
+• Tienda Torno (Principal) - 955 865 715
+  Horario: L-V 07:30-14:00/17:00-20:00, S 09:00-13:00
+  
+• Tienda Ronda las Zarzuelas - 955 864 705
+  Horario: L-V 08:30-14:00/17:00-20:00, S 09:00-13:00
+
+
+================================================================================
+5. ESTILOS CSS
+================================================================================
+
+MAIN.CSS - Estilos Principales
+──────────────────────────────
+Líneas aproximadas: 1867
+Tamaño: 36KB
+
+Secciones:
+1. Variables CSS (:root)
+2. Reset y Base
+3. Utilidades
+4. Top Bar
+5. Header y Navegación
+6. Hero Section
+7. Wave Separator
+8. Servicios
+9. Categorías
+10. Productos
+11. Sobre Nosotros
+12. Tiendas
+13. Newsletter
+14. Footer
+15. Botones
+16. Cards
+17. Modales
+
+VARIABLES CSS PRINCIPALES:
+──────────────────────────
+--color-primary:        #c41e3a (Rojo corporativo)
+--color-primary-light:  #dc3545
+--color-secondary:      #1a3a6e (Azul oscuro)
+--color-accent:         #f97316 (Naranja)
+
+--slate-50:  #f8fafc
+--slate-100: #f1f5f9
+--slate-200: #e2e8f0
+--slate-400: #94a3b8
+--slate-600: #475569
+--slate-800: #1e293b
+--slate-900: #0f172a
+
+--bg-primary:   #ffffff
+--bg-secondary: #f8fafc
+--bg-gradient:  linear-gradient(135deg, #c41e3a 0%, #1a3a6e 100%)
+
+--radius-sm:   0.375rem
+--radius-md:   0.5rem
+--radius-lg:   0.75rem
+--radius-xl:   1rem
+--radius-2xl:  1.5rem
+--radius-full: 9999px
+
+--shadow-sm:  0 1px 2px rgba(0,0,0,0.05)
+--shadow-md:  0 4px 6px rgba(0,0,0,0.1)
+--shadow-lg:  0 10px 15px rgba(0,0,0,0.1)
+--shadow-xl:  0 20px 25px rgba(0,0,0,0.1)
+--shadow-2xl: 0 25px 50px rgba(0,0,0,0.25)
+
+RESPONSIVE.CSS - Media Queries
+──────────────────────────────
+Líneas aproximadas: 550
+Tamaño: 10KB
+
+Breakpoints:
+• max-width: 1200px (Tablet grande)
+• max-width: 1024px (Tablet)
+• max-width: 768px  (Móvil/Tablet pequeña)
+• max-width: 480px  (Móvil pequeño)
+
+Características móvil (768px):
+• Menú hamburguesa slide-in desde izquierda
+• Overlay oscuro semitransparente
+• Dropdowns con flechas indicadoras
+• Hero simplificado
+• Grids de 1-2 columnas
+• Footer centrado
+
+ANIMATIONS.CSS - Animaciones
+────────────────────────────
+Líneas aproximadas: 613
+Tamaño: 11KB
+
+Keyframes:
+• gradientShift    - Gradiente animado
+• float            - Flotación suave
+• pulseGlow        - Brillo pulsante
+• slideUp          - Entrada desde abajo
+• slideInLeft      - Entrada desde izquierda
+• slideInRight     - Entrada desde derecha
+• scaleIn          - Escala con rebote
+• shimmer          - Efecto brillo
+• rotate           - Rotación
+• wave             - Movimiento onda
+• morphBlob        - Transformación orgánica
+
+Clases de animación:
+• .reveal, .reveal-left, .reveal-right, .reveal-scale
+• .floating, .floating-slow, .floating-fast
+• .animated-gradient
+• .pulse-glow
+• .shimmer-text
+• .glass, .glass-dark, .glass-primary
+• .hover-lift, .hover-tilt, .hover-shine
+
+
+================================================================================
+6. JAVASCRIPT - FUNCIONALIDADES
+================================================================================
+
+MAIN.JS - JavaScript Principal
+──────────────────────────────
+Líneas aproximadas: 450
+Tamaño: 15KB
+
+FUNCIONES PRINCIPALES:
+
+1. initMobileMenu()
+   - Toggle del menú móvil
+   - Gestión del overlay
+   - Dropdowns táctiles
+   - Cierre al navegar
+
+2. initDropdowns()
+   - Hover en desktop
+   - Touch en tablets
+   - Animaciones suaves
+
+3. initScrollAnimations()
+   - IntersectionObserver
+   - Clases .reveal, .revealed
+   - Animaciones al scroll
+
+4. initSmoothScroll()
+   - Navegación suave a anclas
+   - Offset para header fijo
+
+5. initNewsletterForm()
+   - Validación de email
+   - Feedback visual
+   - Prevención de submit
+
+6. initPhoneModal()
+   - Modal selección de tienda
+   - Links de llamada directa
+
+7. initHeaderScroll()
+   - Clase .scrolled en scroll
+   - Efecto glassmorphism
+   - Ocultar/mostrar header
+
+8. initLazyLoading()
+   - Carga diferida de imágenes
+   - IntersectionObserver
+
+EVENTOS:
+• DOMContentLoaded - Inicialización
+• scroll - Header effects
+• click - Navegación, modales
+• touchstart - Soporte táctil
+• resize - Responsive behavior
+
+
+================================================================================
+7. SISTEMA DE DISEÑO
+================================================================================
+
+PALETA DE COLORES:
+──────────────────
+
+Primarios:
+┌────────────┬──────────┬─────────────────────────┐
+│ Nombre     │ Código   │ Uso                     │
+├────────────┼──────────┼─────────────────────────┤
+│ Primary    │ #c41e3a  │ CTAs, acentos           │
+│ Secondary  │ #1a3a6e  │ Headers, fondos         │
+│ Accent     │ #f97316  │ Destacados, badges      │
+└────────────┴──────────┴─────────────────────────┘
+
+Neutros (Slate):
+┌────────────┬──────────┬─────────────────────────┐
+│ Slate-50   │ #f8fafc  │ Fondos claros           │
+│ Slate-100  │ #f1f5f9  │ Bordes, separadores     │
+│ Slate-400  │ #94a3b8  │ Texto secundario        │
+│ Slate-600  │ #475569  │ Texto base              │
+│ Slate-900  │ #0f172a  │ Títulos, énfasis        │
+└────────────┴──────────┴─────────────────────────┘
+
+TIPOGRAFÍA:
+───────────
+Familia: Inter (Google Fonts)
+Pesos: 400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold), 800 (Extrabold)
+
+Tamaños:
+• h1: 3.5rem (desktop) / 2rem (móvil)
+• h2: 2.25rem / 1.75rem
+• h3: 1.25rem
+• body: 1rem
+• small: 0.875rem
+
+ESPACIADO:
+──────────
+Sistema de 8px:
+• 0.5rem = 8px
+• 1rem = 16px
+• 1.5rem = 24px
+• 2rem = 32px
+• 3rem = 48px
+• 4rem = 64px
+
+BORDES:
+───────
+• sm: 0.375rem (6px)
+• md: 0.5rem (8px)
+• lg: 0.75rem (12px)
+• xl: 1rem (16px)
+• 2xl: 1.5rem (24px)
+• full: 9999px (circular)
+
+SOMBRAS:
+────────
+• sm: Sutil, para inputs
+• md: Cards en reposo
+• lg: Cards hover
+• xl: Elementos flotantes
+• 2xl: Modales, menú móvil
+
+
+================================================================================
+8. RESPONSIVE DESIGN
+================================================================================
+
+BREAKPOINTS:
+────────────
+
+┌─────────────────┬───────────┬─────────────────────────────────────────────┐
+│ Dispositivo     │ Ancho     │ Cambios principales                         │
+├─────────────────┼───────────┼─────────────────────────────────────────────┤
+│ Desktop Grande  │ > 1200px  │ Layout completo, 4+ columnas                │
+│ Desktop         │ 1024-1200 │ Hero sin imagen, 3 columnas                 │
+│ Tablet          │ 768-1024  │ 2 columnas, footer simplificado             │
+│ Móvil           │ < 768px   │ Menú hamburguesa, 1-2 columnas              │
+│ Móvil Pequeño   │ < 480px   │ Componentes compactos                       │
+└─────────────────┴───────────┴─────────────────────────────────────────────┘
+
+MENÚ MÓVIL (< 768px):
+─────────────────────
+• Tipo: Slide-in desde izquierda
+• Ancho: 280px
+• Z-index: 9999 (menú), 9998 (overlay)
+• Overlay: rgba(0,0,0,0.5)
+• Animación: left 0.3s ease
+
+Características:
+• Hamburguesa animada (X al abrir)
+• Flecha indicadora en items con dropdown
+• Submenús expandibles con animación
+• Cierre al tocar overlay
+• Cierre al navegar a un link
+• body overflow: hidden cuando abierto
+
+
+================================================================================
+9. SEO Y METADATOS
+================================================================================
+
+META TAGS BÁSICOS:
+──────────────────
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="[Descripción específica por página]">
+<title>[Título de Página] - Pinturas Merpa</title>
+<link rel="icon" type="image/png" href="assets/images/logo/favicon.png">
+
+ESTRUCTURA HTML SEMÁNTICA:
+──────────────────────────
+• <header> - Cabecera principal
+• <nav> - Navegación
+• <main> - Contenido principal
+• <section> - Secciones temáticas
+• <article> - Productos, posts
+• <aside> - Contenido secundario
+• <footer> - Pie de página
+
+ACCESIBILIDAD:
+──────────────
+• aria-label en botones sin texto
+• alt en todas las imágenes
+• Focus visible en elementos interactivos
+• Contraste de colores adecuado
+• prefers-reduced-motion respetado
+
+
+================================================================================
+10. INFORMACIÓN DE CONTACTO
+================================================================================
+
+EMPRESA:
+────────
+Razón Social: Pinturas Merpa E Hijos S.L.
+Sector: Pinturas y Bricolaje
+Experiencia: +30 años
+
+TIENDAS:
+────────
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ TIENDA PRINCIPAL - TORNO                                                     │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Dirección:  Calle Torno, Utrera (Sevilla)                                    │
+│ Teléfono:   955 865 715                                                      │
+│ Horario:    Lunes a Viernes: 07:30-14:00 / 17:00-20:00                      │
+│             Sábado: 09:00-13:00                                              │
+│             Domingo: CERRADO                                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ TIENDA SECUNDARIA - RONDA LAS ZARZUELAS                                      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Dirección:  C/Ronda las Zarzuelas, Utrera (Sevilla)                          │
+│ Teléfono:   955 864 705                                                      │
+│ Horario:    Lunes a Viernes: 08:30-14:00 / 17:00-20:00                      │
+│             Sábado: 09:00-13:00                                              │
+│             Domingo: CERRADO                                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+CONTACTO GENERAL:
+─────────────────
+📧 Email:    info@pinturasmerpa.es
+📱 Móvil:    640 385 384
+💬 WhatsApp: wa.me/34640385384
+🌐 Web:      pinturasmerpa.es
+
+REDES SOCIALES:
+───────────────
+• Facebook
+• Instagram
+• WhatsApp Business
+
+
+================================================================================
+                              FIN DEL DOCUMENTO
+================================================================================
+
+© 2025 Pinturas Merpa E Hijos S.L. - Todos los derechos reservados
+Documento generado automáticamente - Última actualización: 17/12/2025
